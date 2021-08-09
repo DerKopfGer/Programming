@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Created-By: Demián Baqué
+Main-Class: PrimoUno
+X-COMMENT: Mi primo es una persona muy auténtica

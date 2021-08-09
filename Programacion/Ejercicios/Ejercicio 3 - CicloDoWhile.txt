@@ -1,0 +1,21 @@
+public class CicloDoWhile{
+  public static void main(String args[]){
+
+   int i = 0, a = 0, b = 1, c = 0;
+
+   do{
+    if(i < 9){
+      System.out.print(a + ",");
+      c = a + b;
+      a = b;
+      b = c;
+
+    } else{
+      System.out.print(a);  
+    } 
+
+      i++;  
+   
+  } while(i < 10);  
+ }
+}

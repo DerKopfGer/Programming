@@ -1,0 +1,71 @@
+import java.util.Scanner;
+
+public class Operaciones{
+ public static void main(String args[]){
+
+
+   Scanner teclado = new Scanner(System.in);
+   float numUno = 0, numDos = 0, numTres = 0;
+   String nombre = ""; 
+   float resultado = numUno + numDos + numTres;
+   int parametro = 0;
+   
+
+   System.out.println("************************************************");
+   System.out.println("Bienvenido al sistema de operaciones matematicas");
+   System.out.println("************************************************");
+   System.out.println("");
+   System.out.println("Digame su nombre por favor");
+   System.out.println("");
+   nombre = teclado.nextLine();
+   System.out.println("");
+   System.out.println("digite 1 para realizar una suma"); 
+   System.out.println("");
+   System.out.println("digite 2 para realizar una resta");
+   System.out.println("");
+   System.out.println("digite 3 para realizar una multiplicacion");
+   System.out.println("");
+   System.out.println("digite 4 para realizar una division");
+   System.out.println("");
+
+   parametro = teclado.nextInt();
+
+   System.out.println("");
+   System.out.println("Digite el numero 1: ");
+   System.out.println("");
+   numUno = teclado.nextInt();
+   System.out.println("");
+
+   System.out.println("Digite el numero 2: ");
+   System.out.println("");
+   numDos = teclado.nextInt();
+   System.out.println("");
+
+   System.out.println("Digite el numero 3: ");
+   System.out.println("");
+   numTres = teclado.nextInt();
+   System.out.println("");
+   
+   switch(parametro){
+
+
+     case 1: resultado = numUno + numDos + numTres;
+             System.out.println("El resultado de tu suma es: " + resultado);
+             break;
+
+     case 2: resultado = numUno - numDos - numTres;
+             System.out.println("El resultado de tu resta es: " + resultado);
+             break;
+
+     case 3: resultado = numUno * numDos + numTres;
+             System.out.println("El resultado de tu multiplicacion es: " + resultado);
+             break;
+ 
+     case 4: resultado = numUno / numDos / numTres;
+             System.out.println("El resultado de tu division es: " + resultado);
+             break;
+
+     default: System.out.println("Error! La opcion no existe"); 
+   }  
+ }
+}

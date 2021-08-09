@@ -1,0 +1,49 @@
+import javax.swing.*
+import java.awt.event.*;
+
+public class Formulario extends JFrame implements ActionListener{
+
+ private JTextField campo1;
+ private JButton boton1;
+ private JTextArea area1; 
+ private JScrollPane barra1;
+
+ String texto = "";
+
+ public Formulario(){
+
+  setLayout(null);
+   campo1 = new JTextField();
+   campo1.setBounds(10,10,200,30);
+   add(campo1); 
+
+   boton1 = new JButton("Agregar");
+   boton1.setBounds(250,10,100,30);
+   add(boton1);
+   boton1.addActionListener(this);
+
+   area1 = new JTextArea();
+   barra1 = new JScrollPane(area1);
+   barra1.setBounds(10,50,400,300)
+   add(barra1);
+
+ } 
+
+   public void actionPerformed(ActionEvent evento){
+    if(evento.getSource() == boton1){
+       texto += campo1.getText() + "\n";
+       area1.setText(texto);
+       campo1.setText("");
+    }   
+  }   
+
+   public static void main(String args[]){
+
+   Formulario formulario1 = new Formulario();
+   formulario1.setBounds(0,0,540,400);
+   formulario1.setVisible(true);
+   formulario1.setResizable(false);
+   formulario1.setLocationRelativeTo(null);
+
+ }           
+}

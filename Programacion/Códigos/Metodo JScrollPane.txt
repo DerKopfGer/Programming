@@ -1,0 +1,32 @@
+import javax.swing.*;
+
+public class Formulario extends JFrame{
+  
+ private JTextField campo1;
+ private JScrollPane barra1;
+ private JTextArea area1;
+
+ public Formulario(){
+
+   setLayout(null);
+   campo1 = new JTextField();
+   campo1.setBounds(10,10,200,30);
+   add(campo1);
+  
+   area1 = new JTextArea();
+   barra1 = new JScrollPane(area1);
+   barra1.setBounds(10,50,400,300);
+   add(barra1);
+
+ } 
+
+   public static void main(String args[]){
+
+    Formulario formulario1 = new Formulario();
+    formulario1.setBounds(0,0,500,400);
+    formulario1.setVisible(true);
+    formulario1.setLocationRelativeTo(null);
+    formulario1.setResizable(false);
+
+ }
+}

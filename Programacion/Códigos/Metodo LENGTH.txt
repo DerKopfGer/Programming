@@ -1,0 +1,38 @@
+import java.util.Scanner;
+
+public class Length{
+  public static void main(String args[]){
+
+   String cadena_original, cadena_extraccion;
+   int caracteres = 0, desde = 0, hasta = 0;
+   Scanner teclado = new Scanner(System.in);
+
+   System.out.println("");
+
+   System.out.print("Introduzca su cadena de caracteres: ");
+   cadena_original = teclado.nextLine();
+ 
+   System.out.println("");
+
+   caracteres = cadena_original.length();
+
+   System.out.print("La cadena " + cadena_original + " tiene " + caracteres + " caracteres.");
+   
+   System.out.println("");
+
+   System.out.print("Desde que caracter quiere recibir la nueva cadena? ");
+   desde = teclado.nextInt();
+
+   System.out.println("");
+
+   System.out.print("Hasta que caracter quiere recibir la nueva cadena? ");
+   hasta = teclado.nextInt();
+
+   cadena_extraccion = cadena_original.substring(desde, hasta);
+
+   System.out.println("La nueva cadena es: " + cadena_extraccion);
+
+   
+
+ }
+}

@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class EqualsDos{
+  public static void main(String args[]){
+
+
+   String usuario = "", password = "";
+   Scanner teclado = new Scanner(System.in);
+
+   System.out.println("");
+
+   System.out.print("Por favor introduzca su nombre de usuario: ");
+   usuario = in.nextLine();
+
+   System.out.println("");
+
+   System.out.print("Por favor introduzca su password: ");
+   password = in.nextLine();
+
+   System.out.println("");
+
+   if(usuario.equals("Demian") && password.equals("labanda123")){
+     System.out.println("Inicio de sesion correcto") 
+   } else {
+     System.our.println("Inicio de sesion incorrecto")
+   }
+ }
+}
